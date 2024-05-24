@@ -1,3 +1,3 @@
 export default function handler(req, res) {
-	res.status(200).send({ username: req.params.username });
+	res.status(200).send({ username: req.params });
 }
