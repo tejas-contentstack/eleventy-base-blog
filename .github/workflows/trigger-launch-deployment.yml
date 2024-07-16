@@ -10,14 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Get latest commit SHA
-        id: get_sha
-        run: |
-          echo "::set-output name=SHA  ## This line sets an output variable"
-          git rev-parse HEAD
-
       - name: Deploy with hotfix tag
         run: |
           echo "${{ github.sha }}"
