@@ -1,4 +1,4 @@
-export default function handler(request, response) {
+export default function handler(req, response) {
   console.log("🚀 ~ handler ~ request:", request.body)
 
     console.log({ query: req.query });
