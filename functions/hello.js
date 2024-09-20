@@ -3,6 +3,7 @@ export default function handler(req, res) {
         console.log(req.headers);
 
   if (req.method === "GET") {
+    console.log(process.env.128);
       console.log("Hello from eleventy website");
     res
       .status(200)
