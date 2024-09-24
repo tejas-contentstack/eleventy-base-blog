@@ -2,7 +2,7 @@
 	"name": "eleventy-base-blog",
 	"version": "8.0.0",
 	"description": "A starter repository for a blog web site using the Eleventy site generator.",
-	"packageManager": "yarn@3.8",
+	"packageManager": "yarn@1.8",
 	"scripts": {
 		"build": "npx @11ty/eleventy && yarn --help",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
