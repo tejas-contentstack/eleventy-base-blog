@@ -1,7 +1,10 @@
 export default async function handler(req, res) {
-	const sleepTime = 11 * 60* 1000;
+	const sleepTime = 3 * 60* 1000;
+	setInterval(() => {
+	console.log("Printing something every 10 seconds");
+	}, 10_000);
   await sleep(sleepTime)
-  console.log('Waited for 11 minutes!!!');
+  console.log('Waited for 3 minutes!!!');
 	res.status(200).send("sent!");
 }
 
