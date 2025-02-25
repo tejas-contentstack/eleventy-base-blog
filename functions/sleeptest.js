@@ -1,4 +1,4 @@
-export default function async handler(req, res) {
+export default async function  handler(req, res) {
 	const sleepTime = 11 * 60* 1000;
   await sleep(sleepTime)
   console.log('Waited for 11 minutes!!!');
